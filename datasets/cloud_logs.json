@@ -1,0 +1,12 @@
+[
+  {
+    "event_id": "cloud-001",
+    "timestamp": "2026-09-26T12:08:00Z",
+    "source": "cloud",
+    "event_type": "role_assumption",
+    "principal": "analyst@example.test",
+    "asset": "cloud-account-dev",
+    "severity": "high",
+    "attributes": {"role": "PrivilegedOperator", "source_ip": "198.51.100.20"}
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "event_id": "net-001",
+    "timestamp": "2026-09-26T12:05:00Z",
+    "source": "network",
+    "event_type": "outbound_connection",
+    "principal": "analyst@example.test",
+    "asset": "workstation-01",
+    "severity": "medium",
+    "attributes": {"destination_ip": "198.51.100.20", "destination_port": 443}
+  }
+]

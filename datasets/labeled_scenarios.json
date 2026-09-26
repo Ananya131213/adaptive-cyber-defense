@@ -1,0 +1,8 @@
+[
+  {
+    "scenario_id": "scenario-001",
+    "label": "multi_stage_suspicious_activity",
+    "event_ids": ["auth-001", "proc-001", "net-001", "cloud-001"],
+    "expected_outcome": "correlated_incident"
+  }
+]

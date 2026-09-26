@@ -178,6 +178,16 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
+# Frontend dependencies and build output
+node_modules/
+dist/
+
+# IDE and local environment files
+.idea/
+.vscode/
+.env
+.venv/
+
 # Cython debug symbols
 cython_debug/
 

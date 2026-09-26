@@ -1,0 +1,12 @@
+[
+  {
+    "event_id": "auth-001",
+    "timestamp": "2026-09-26T12:00:00Z",
+    "source": "authentication",
+    "event_type": "login_failure",
+    "principal": "analyst@example.test",
+    "asset": "identity-provider",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.10", "failure_count": 8}
+  }
+]
