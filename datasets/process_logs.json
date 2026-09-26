@@ -1,12 +1,102 @@
 [
   {
     "event_id": "proc-001",
-    "timestamp": "2026-09-26T12:03:00Z",
+    "timestamp": "2026-09-26T09:02:10Z",
     "source": "process",
     "event_type": "process_start",
-    "principal": "analyst@example.test",
-    "asset": "workstation-01",
-    "severity": "medium",
-    "attributes": {"process_name": "powershell.exe", "parent_process": "winword.exe"}
+    "principal": "jordan.lee@example.test",
+    "asset": "ws-fin-014",
+    "severity": "low",
+    "attributes": {"process_name": "outlook.exe", "parent_process": "explorer.exe", "process_id": 4820}
+  },
+  {
+    "event_id": "proc-002",
+    "timestamp": "2026-09-26T09:04:18Z",
+    "source": "process",
+    "event_type": "process_start",
+    "principal": "casey.morgan@example.test",
+    "asset": "ws-eng-022",
+    "severity": "low",
+    "attributes": {"process_name": "code.exe", "parent_process": "explorer.exe", "process_id": 6412}
+  },
+  {
+    "event_id": "proc-003",
+    "timestamp": "2026-09-26T09:06:45Z",
+    "source": "process",
+    "event_type": "process_start",
+    "principal": "sam.rivera@example.test",
+    "asset": "ws-ops-008",
+    "severity": "low",
+    "attributes": {"process_name": "powershell.exe", "parent_process": "explorer.exe", "command_line": "powershell.exe -NoProfile Get-Service", "process_id": 7340}
+  },
+  {
+    "event_id": "proc-004",
+    "timestamp": "2026-09-26T09:08:03Z",
+    "source": "process",
+    "event_type": "process_start",
+    "principal": "jordan.lee@example.test",
+    "asset": "ws-fin-014",
+    "severity": "low",
+    "attributes": {"process_name": "excel.exe", "parent_process": "explorer.exe", "process_id": 5064}
+  },
+  {
+    "event_id": "proc-005",
+    "timestamp": "2026-09-26T09:09:54Z",
+    "source": "process",
+    "event_type": "process_start",
+    "principal": "casey.morgan@example.test",
+    "asset": "ws-eng-022",
+    "severity": "low",
+    "attributes": {"process_name": "python.exe", "parent_process": "code.exe", "command_line": "python.exe build_report.py", "process_id": 6988}
+  },
+  {
+    "event_id": "proc-006",
+    "timestamp": "2026-09-26T09:11:36Z",
+    "source": "process",
+    "event_type": "process_start",
+    "principal": "sam.rivera@example.test",
+    "asset": "ws-ops-008",
+    "severity": "high",
+    "attributes": {"process_name": "powershell.exe", "parent_process": "winword.exe", "command_line": "powershell.exe -NoProfile -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkA", "process_id": 8916}
+  },
+  {
+    "event_id": "proc-007",
+    "timestamp": "2026-09-26T09:13:22Z",
+    "source": "process",
+    "event_type": "process_exit",
+    "principal": "jordan.lee@example.test",
+    "asset": "ws-fin-014",
+    "severity": "low",
+    "attributes": {"process_name": "excel.exe", "exit_code": 0, "process_id": 5064}
+  },
+  {
+    "event_id": "proc-008",
+    "timestamp": "2026-09-26T09:15:01Z",
+    "source": "process",
+    "event_type": "process_start",
+    "principal": "taylor.chen@example.test",
+    "asset": "ws-hr-031",
+    "severity": "low",
+    "attributes": {"process_name": "teams.exe", "parent_process": "explorer.exe", "process_id": 7724}
+  },
+  {
+    "event_id": "proc-009",
+    "timestamp": "2026-09-26T09:17:49Z",
+    "source": "process",
+    "event_type": "process_start",
+    "principal": "avery.patel@example.test",
+    "asset": "ws-ops-013",
+    "severity": "low",
+    "attributes": {"process_name": "notepad.exe", "parent_process": "explorer.exe", "process_id": 4168}
+  },
+  {
+    "event_id": "proc-010",
+    "timestamp": "2026-09-26T09:19:57Z",
+    "source": "process",
+    "event_type": "process_start",
+    "principal": "sam.rivera@example.test",
+    "asset": "ws-ops-008",
+    "severity": "low",
+    "attributes": {"process_name": "mmc.exe", "parent_process": "explorer.exe", "process_id": 3504}
   }
 ]

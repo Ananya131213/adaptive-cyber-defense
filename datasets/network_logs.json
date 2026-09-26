@@ -1,12 +1,102 @@
 [
   {
     "event_id": "net-001",
-    "timestamp": "2026-09-26T12:05:00Z",
+    "timestamp": "2026-09-26T09:01:12Z",
     "source": "network",
-    "event_type": "outbound_connection",
-    "principal": "analyst@example.test",
-    "asset": "workstation-01",
-    "severity": "medium",
-    "attributes": {"destination_ip": "198.51.100.20", "destination_port": 443}
+    "event_type": "outbound_flow",
+    "principal": "jordan.lee@example.test",
+    "asset": "ws-fin-014",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.40", "destination_ip": "203.0.113.10", "destination_port": 443, "direction": "outbound", "bytes_out": 18422}
+  },
+  {
+    "event_id": "net-002",
+    "timestamp": "2026-09-26T09:03:27Z",
+    "source": "network",
+    "event_type": "outbound_flow",
+    "principal": "casey.morgan@example.test",
+    "asset": "ws-eng-022",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.52", "destination_ip": "203.0.113.21", "destination_port": 443, "direction": "outbound", "bytes_out": 72814}
+  },
+  {
+    "event_id": "net-003",
+    "timestamp": "2026-09-26T09:05:44Z",
+    "source": "network",
+    "event_type": "outbound_flow",
+    "principal": "sam.rivera@example.test",
+    "asset": "ws-ops-008",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.61", "destination_ip": "203.0.113.35", "destination_port": 443, "direction": "outbound", "bytes_out": 36109}
+  },
+  {
+    "event_id": "net-004",
+    "timestamp": "2026-09-26T09:07:05Z",
+    "source": "network",
+    "event_type": "inbound_flow",
+    "principal": "casey.morgan@example.test",
+    "asset": "ws-eng-022",
+    "severity": "low",
+    "attributes": {"source_ip": "198.51.100.45", "destination_ip": "192.0.2.52", "destination_port": 443, "direction": "inbound", "bytes": 9460}
+  },
+  {
+    "event_id": "net-005",
+    "timestamp": "2026-09-26T09:10:28Z",
+    "source": "network",
+    "event_type": "outbound_flow",
+    "principal": "jordan.lee@example.test",
+    "asset": "ws-fin-014",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.40", "destination_ip": "203.0.113.12", "destination_port": 443, "direction": "outbound", "bytes_out": 51903}
+  },
+  {
+    "event_id": "net-006",
+    "timestamp": "2026-09-26T09:12:46Z",
+    "source": "network",
+    "event_type": "outbound_flow",
+    "principal": "morgan.reed@example.test",
+    "asset": "ws-sales-019",
+    "severity": "high",
+    "attributes": {"source_ip": "192.0.2.89", "destination_ip": "198.51.100.90", "destination_port": 443, "direction": "outbound", "bytes_out": 52428800, "protocol": "TLS"}
+  },
+  {
+    "event_id": "net-007",
+    "timestamp": "2026-09-26T09:14:33Z",
+    "source": "network",
+    "event_type": "outbound_flow",
+    "principal": "taylor.chen@example.test",
+    "asset": "ws-hr-031",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.73", "destination_ip": "203.0.113.66", "destination_port": 443, "direction": "outbound", "bytes_out": 21781}
+  },
+  {
+    "event_id": "net-008",
+    "timestamp": "2026-09-26T09:16:58Z",
+    "source": "network",
+    "event_type": "outbound_flow",
+    "principal": "avery.patel@example.test",
+    "asset": "ws-ops-013",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.68", "destination_ip": "203.0.113.41", "destination_port": 53, "direction": "outbound", "bytes_out": 6120, "protocol": "UDP"}
+  },
+  {
+    "event_id": "net-009",
+    "timestamp": "2026-09-26T09:18:42Z",
+    "source": "network",
+    "event_type": "outbound_flow",
+    "principal": "sam.rivera@example.test",
+    "asset": "ws-ops-008",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.61", "destination_ip": "203.0.113.35", "destination_port": 443, "direction": "outbound", "bytes_out": 33509}
+  },
+  {
+    "event_id": "net-010",
+    "timestamp": "2026-09-26T09:21:14Z",
+    "source": "network",
+    "event_type": "outbound_flow",
+    "principal": "taylor.chen@example.test",
+    "asset": "ws-hr-031",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.73", "destination_ip": "203.0.113.67", "destination_port": 443, "direction": "outbound", "bytes_out": 47880}
   }
 ]

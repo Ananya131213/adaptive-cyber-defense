@@ -1,4 +1,48 @@
 {
   "version": 1,
-  "rules": []
+  "rules": {
+    "brute_force": {
+      "enabled": true,
+      "alert_name": "Brute Force Followed by Successful Login",
+      "failure_threshold": 5,
+      "window_minutes": 15,
+      "severity": "high",
+      "confidence": 0.96,
+      "mitre": "T1110"
+    },
+    "suspicious_powershell": {
+      "enabled": true,
+      "alert_name": "Suspicious PowerShell Encoded Command",
+      "severity": "high",
+      "confidence": 0.95,
+      "mitre": "T1059.001"
+    },
+    "data_exfiltration": {
+      "enabled": true,
+      "alert_name": "Unusually Large Outbound Transfer",
+      "minimum_outbound_bytes": 10485760,
+      "severity": "high",
+      "confidence": 0.92,
+      "mitre": "T1041"
+    },
+    "privilege_escalation": {
+      "enabled": true,
+      "alert_name": "Repeated Administrative Role Changes",
+      "minimum_changes": 3,
+      "window_minutes": 10,
+      "severity": "critical",
+      "confidence": 0.94,
+      "mitre": "T1098"
+    }
+  },
+  "anomaly_detection": {
+    "enabled": true,
+    "alert_name": "Anomalous Activity",
+    "minimum_events_per_source": 8,
+    "contamination": 0.1,
+    "n_estimators": 200,
+    "random_state": 42,
+    "severity": "medium",
+    "mitre": "T1190"
+  }
 }

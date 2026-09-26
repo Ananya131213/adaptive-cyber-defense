@@ -1,12 +1,122 @@
 [
   {
     "event_id": "auth-001",
-    "timestamp": "2026-09-26T12:00:00Z",
+    "timestamp": "2026-09-26T09:00:00Z",
+    "source": "authentication",
+    "event_type": "login_success",
+    "principal": "jordan.lee@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.40", "authentication_method": "password_mfa"}
+  },
+  {
+    "event_id": "auth-002",
+    "timestamp": "2026-09-26T09:12:00Z",
     "source": "authentication",
     "event_type": "login_failure",
-    "principal": "analyst@example.test",
+    "principal": "morgan.reed@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "203.0.113.72", "failure_count": 1, "reason": "invalid_password"}
+  },
+  {
+    "event_id": "auth-003",
+    "timestamp": "2026-09-26T09:12:35Z",
+    "source": "authentication",
+    "event_type": "login_failure",
+    "principal": "morgan.reed@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "203.0.113.72", "failure_count": 1, "reason": "invalid_password"}
+  },
+  {
+    "event_id": "auth-004",
+    "timestamp": "2026-09-26T09:13:10Z",
+    "source": "authentication",
+    "event_type": "login_failure",
+    "principal": "morgan.reed@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "203.0.113.72", "failure_count": 1, "reason": "invalid_password"}
+  },
+  {
+    "event_id": "auth-005",
+    "timestamp": "2026-09-26T09:13:46Z",
+    "source": "authentication",
+    "event_type": "login_failure",
+    "principal": "morgan.reed@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "203.0.113.72", "failure_count": 1, "reason": "invalid_password"}
+  },
+  {
+    "event_id": "auth-006",
+    "timestamp": "2026-09-26T09:14:22Z",
+    "source": "authentication",
+    "event_type": "login_failure",
+    "principal": "morgan.reed@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "203.0.113.72", "failure_count": 1, "reason": "invalid_password"}
+  },
+  {
+    "event_id": "auth-007",
+    "timestamp": "2026-09-26T09:14:58Z",
+    "source": "authentication",
+    "event_type": "login_failure",
+    "principal": "morgan.reed@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "203.0.113.72", "failure_count": 1, "reason": "invalid_password"}
+  },
+  {
+    "event_id": "auth-008",
+    "timestamp": "2026-09-26T09:15:20Z",
+    "source": "authentication",
+    "event_type": "login_failure",
+    "principal": "morgan.reed@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "203.0.113.72", "failure_count": 1, "reason": "invalid_password"}
+  },
+  {
+    "event_id": "auth-009",
+    "timestamp": "2026-09-26T09:15:43Z",
+    "source": "authentication",
+    "event_type": "login_success",
+    "principal": "morgan.reed@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "medium",
+    "attributes": {"source_ip": "203.0.113.72", "authentication_method": "password"}
+  },
+  {
+    "event_id": "auth-010",
+    "timestamp": "2026-09-26T09:18:04Z",
+    "source": "authentication",
+    "event_type": "login_success",
+    "principal": "taylor.chen@example.test",
+    "asset": "vpn-gateway-01",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.51", "authentication_method": "password_mfa"}
+  },
+  {
+    "event_id": "auth-011",
+    "timestamp": "2026-09-26T09:22:31Z",
+    "source": "authentication",
+    "event_type": "login_failure",
+    "principal": "avery.patel@example.test",
     "asset": "identity-provider",
     "severity": "low",
-    "attributes": {"source_ip": "192.0.2.10", "failure_count": 8}
+    "attributes": {"source_ip": "192.0.2.68", "failure_count": 1, "reason": "mfa_timeout"}
+  },
+  {
+    "event_id": "auth-012",
+    "timestamp": "2026-09-26T09:23:02Z",
+    "source": "authentication",
+    "event_type": "login_success",
+    "principal": "avery.patel@example.test",
+    "asset": "identity-provider",
+    "severity": "low",
+    "attributes": {"source_ip": "192.0.2.68", "authentication_method": "password_mfa"}
   }
 ]

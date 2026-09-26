@@ -1,12 +1,102 @@
 [
   {
     "event_id": "cloud-001",
-    "timestamp": "2026-09-26T12:08:00Z",
+    "timestamp": "2026-09-26T09:00:45Z",
     "source": "cloud",
-    "event_type": "role_assumption",
-    "principal": "analyst@example.test",
-    "asset": "cloud-account-dev",
+    "event_type": "role_assumed",
+    "principal": "jordan.lee@example.test",
+    "asset": "cloud-account-prod",
+    "severity": "low",
+    "attributes": {"role": "ReadOnlySupport", "source_ip": "192.0.2.40", "mfa": true}
+  },
+  {
+    "event_id": "cloud-002",
+    "timestamp": "2026-09-26T09:03:19Z",
+    "source": "cloud",
+    "event_type": "object_read",
+    "principal": "casey.morgan@example.test",
+    "asset": "storage-project-artifacts",
+    "severity": "low",
+    "attributes": {"object_count": 4, "region": "us-east-1"}
+  },
+  {
+    "event_id": "cloud-003",
+    "timestamp": "2026-09-26T09:06:12Z",
+    "source": "cloud",
+    "event_type": "role_assumed",
+    "principal": "sam.rivera@example.test",
+    "asset": "cloud-account-ops",
+    "severity": "medium",
+    "attributes": {"role": "OperationsReadOnly", "source_ip": "192.0.2.61", "mfa": true}
+  },
+  {
+    "event_id": "cloud-004",
+    "timestamp": "2026-09-26T09:10:05Z",
+    "source": "cloud",
+    "event_type": "admin_role_change",
+    "principal": "svc-deploy@example.test",
+    "asset": "cloud-account-prod",
     "severity": "high",
-    "attributes": {"role": "PrivilegedOperator", "source_ip": "198.51.100.20"}
+    "attributes": {"old_role": "DeployOperator", "new_role": "Administrator", "change_id": "chg-8401", "source_ip": "203.0.113.91"}
+  },
+  {
+    "event_id": "cloud-005",
+    "timestamp": "2026-09-26T09:12:40Z",
+    "source": "cloud",
+    "event_type": "policy_read",
+    "principal": "taylor.chen@example.test",
+    "asset": "cloud-account-hr",
+    "severity": "low",
+    "attributes": {"policy_name": "HRReadOnly", "result": "allowed"}
+  },
+  {
+    "event_id": "cloud-006",
+    "timestamp": "2026-09-26T09:13:16Z",
+    "source": "cloud",
+    "event_type": "admin_role_change",
+    "principal": "svc-deploy@example.test",
+    "asset": "cloud-account-prod",
+    "severity": "high",
+    "attributes": {"old_role": "Administrator", "new_role": "SecurityAdministrator", "change_id": "chg-8402", "source_ip": "203.0.113.91"}
+  },
+  {
+    "event_id": "cloud-007",
+    "timestamp": "2026-09-26T09:15:29Z",
+    "source": "cloud",
+    "event_type": "admin_role_change",
+    "principal": "svc-deploy@example.test",
+    "asset": "cloud-account-prod",
+    "severity": "critical",
+    "attributes": {"old_role": "SecurityAdministrator", "new_role": "OrganizationAdministrator", "change_id": "chg-8403", "source_ip": "203.0.113.91"}
+  },
+  {
+    "event_id": "cloud-008",
+    "timestamp": "2026-09-26T09:17:51Z",
+    "source": "cloud",
+    "event_type": "object_read",
+    "principal": "avery.patel@example.test",
+    "asset": "storage-incident-archive",
+    "severity": "low",
+    "attributes": {"object_count": 2, "region": "us-east-1"}
+  },
+  {
+    "event_id": "cloud-009",
+    "timestamp": "2026-09-26T09:20:08Z",
+    "source": "cloud",
+    "event_type": "role_assumed",
+    "principal": "morgan.reed@example.test",
+    "asset": "cloud-account-sales",
+    "severity": "low",
+    "attributes": {"role": "SalesReporting", "source_ip": "192.0.2.89", "mfa": true}
+  },
+  {
+    "event_id": "cloud-010",
+    "timestamp": "2026-09-26T09:23:47Z",
+    "source": "cloud",
+    "event_type": "policy_read",
+    "principal": "jordan.lee@example.test",
+    "asset": "cloud-account-prod",
+    "severity": "low",
+    "attributes": {"policy_name": "CustomerSupportRead", "result": "allowed"}
   }
 ]
